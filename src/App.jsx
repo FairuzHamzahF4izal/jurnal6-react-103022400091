@@ -1,26 +1,14 @@
+import KartuMenu from "./components/KartuMenu";
+import Panel from "./components/Panel";
+import "./App.css";
 
 function App() {
-  const namaPanggilan = "Fairuz Hamzah Faizal";
-  const jam = 9;
-
   return (
-    <>
-      <h1
-        className="judul-kantin"
-        style={{
-          color: "darkblue",
-          textAlign: "left",
-        }}
-      >
-        Kantin {namaPanggilan}
-      </h1>
-
-      <p>Saldo awal kartu kantin: Rp {91 * 1000}</p>
-
-      <p>{jam < 12 ? "Selamat pagi" : "Selamat siang"}</p>
-
-      <button disabled>Bayar</button>
-    </>
+    <Panel judul="Menu Hari Ini">
+      <KartuMenu nama="Nasi Ayam Geprek" harga={19100} />
+      <KartuMenu nama="Es Teh Lemon" harga={5000} kategori="Minuman" />
+      <KartuMenu nama="Mie Goreng Telur" harga={15000} kategori="Makanan" />
+    </Panel>
   );
 }
 
