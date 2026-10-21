@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.panel {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.panel h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+.daftar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kartu-menu {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.kartu-menu h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.kartu-menu p {
+  margin-bottom: 8px;
+}
